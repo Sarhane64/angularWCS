@@ -9,6 +9,7 @@ import user from '../user-profile.js';
 export class ComponatTestComponent implements OnInit {
   //variable
   name: string = 'Jean-Mathieu';
+  text: string = 'Beer or not beer';
   //Data-Binding
   imageSrc: string = 'https://via.placeholder.com/350x150';
   //EventBinding
