@@ -1,3 +1,15 @@
 <div class="carre">
-  <p>ABC</p>
+  <img [src]="imageSrc" [alt]="name" />
+  <p>hello {{ name }}</p>
+  <button (click)="sayHello()">Il a pas dit bonjour</button>
+  <hr />
+  <input type="text" [(ngModel)]="name" />
+</div>
+<div>
+  <p>{{ userName }}</p>
+  <p>{{ userFirstName }}</p>
+  <p>{{ userAge }} year</p>
+  <p>{{ userQuote }}</p>
+  <img [src]="userPhoto" [alt]="userName" />
+  <p class="lego">Jeune lego passionner recherche une alternance</p>
 </div>
