@@ -18,9 +18,38 @@
 <div>
   <ul>
     <li>Pommes de terre</li>
-    <li>Raclette</li>
+    <li
+      [ngStyle]="{ backgroundColor: isThisIngredientVital ? 'red' : 'yellow' }"
+    >
+      Raclette
+    </li>
     <li>Jambon</li>
-    <li [ngStyle]="">Cornichons</li>
+    <li [ngClass]="{ vital: isThisIngredientVital }">Cornichons</li>
     <li>Chou-fleur</li>
+  </ul>
+</div>
+<hr />
+<div>
+  <ul *ngIf="isGuestListDisplayed">
+    <li>Brenda</li>
+    <li>Dylan</li>
+    <li>Michel Drucker</li>
+    <li>Marc Aurèle</li>
+    <li>Julie</li>
+  </ul>
+</div>
+<hr />
+<div>
+  <ul *ngFor="let song of songList">
+    {{
+      song
+    }}
+  </ul>
+</div>
+<div>
+  <ul>
+    <li>jean</li>
+    <li>mathieu</li>
+    <li></li>
   </ul>
 </div>

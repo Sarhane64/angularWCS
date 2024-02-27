@@ -16,6 +16,11 @@ export class ComponatTestComponent implements OnInit {
   sayHello(): void {
     alert('bonjour');
   }
+
+  isThisIngredientVital: boolean = true;
+
+  isGuestListDisplayed: boolean = true;
+
   userName: string = user.name;
   userFirstName: string = user.firstName;
   userAge: number = user.age;
@@ -24,4 +29,6 @@ export class ComponatTestComponent implements OnInit {
 
   //useEffect
   ngOnInit(): void {}
+
+  songList: string[] = ['Alejandro', 'Ne me quitte pas', 'Le temps est bon'];
 }
