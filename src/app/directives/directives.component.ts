@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class DirectivesComponent {
   isAdamin: boolean = true;
+
+  toggle() {
+    this.isAdamin = !this.isAdamin;
+  }
 }
